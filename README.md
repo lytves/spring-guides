@@ -4,7 +4,7 @@ Creating basic Spring RESTful application "Hello, World!"
 Followed Spring starters guide [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/) which may help
  you to start familiar with Spring Framework  
  
- Has build a service that accept HTTP GET requests at:
+ Was built a service that accept HTTP GET requests at:
  
  > http://localhost:8080/greeting
  
