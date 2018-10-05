@@ -1,8 +1,8 @@
 # spring-restful-hello-word
 Creating basic Spring RESTful application "Hello, World!"
 
-Followed Spring starters guide [https://spring.io/guides/gs/rest-service/](Building a RESTful Web Service) which may help
- you to get familiar with Spring   
+Followed Spring starters guide [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/) which may help
+ you to start familiar with Spring Framework  
  
  Has build a service that accept HTTP GET requests at:
  
