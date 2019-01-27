@@ -1,25 +1,6 @@
-# spring-restful-hello-word
-Creating basic Spring RESTful application "Hello, World!"
+# Spring Guides
 
-Followed Spring starters guide [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/) which may help
- you to start familiar with Spring Framework  
- 
- Was built a service that accept HTTP GET requests at:
- 
- > http://localhost:8080/greeting
- 
- and
- 
- > http://localhost:8080/greeting?name=Username
- 
- and responds with a JSON representation:
-  
- > {"id":1,"content":"Hello, World!"}
- 
- or 
- 
- > {"id":2,"content":"Hello, Username!"}
- 
- if user do request with **name** parameter
- 
- It's a good way to get some basic knowledge of Spring services 
+Some examples from [Spring official site](spring-restful-hello-world) to learn basic Spring Framework usages and technologies, it will be very useful for those who start learning this magic framework and want use it in their applications!
+
+
+* [Building a RESTful Web Service](spring-restful-hello-world) - creating a "hello world"
