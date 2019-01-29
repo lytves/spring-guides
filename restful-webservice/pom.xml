@@ -6,7 +6,8 @@
 
     <groupId>com.companyname.springapp</groupId>
     <artifactId>restful-guide</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <version>0.1.0</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
