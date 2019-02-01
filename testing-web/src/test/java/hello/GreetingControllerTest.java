@@ -9,27 +9,27 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.containsString;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest
-public class WebLayerTest {
+@WebMvcTest(GreetingController.class)
+public class GreetingControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
-    // We use @MockBean to create and inject a mock for the GreetingService
-    // (if you don’t do this the application context cannot start)
-    // but is not used here, only in the GreetingControllerTest
     @MockBean
     private GreetingService service;
 
     @Test
-    public void shouldReturnDefaultMessage() throws Exception {
-        this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello World")));
+    public void greetingShouldReturnMessageFromService() throws Exception {
+
+        when(service.greet()).thenReturn("Greeting");
+        this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString("Greeting")));
     }
 }
