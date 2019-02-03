@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "new-collecton-name")
+// by default @Document does mapping entity to the name of the class
 public class Customer {
 
     @Id
