@@ -1,7 +1,8 @@
 <template>
   <div class="home">
+    <img alt="Spring Boot logo" src="../assets/spring-boot.png">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to your Spring Boot + Vue.js App"/>
   </div>
 </template>
 
