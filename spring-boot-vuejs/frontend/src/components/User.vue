@@ -59,6 +59,7 @@
             this.inputUser.id = response.data
             console.log(response.data)
             this.showResponse = true
+            this.showRetrievedUser = false
           })
           .catch(e => {
             this.errors.push(e)
