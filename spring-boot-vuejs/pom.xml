@@ -9,6 +9,8 @@
     <version>0.1.0</version>
     <packaging>pom</packaging>
 
+    <name>spring-boot-vuejs</name>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
