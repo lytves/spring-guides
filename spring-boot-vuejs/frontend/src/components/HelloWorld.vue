@@ -6,6 +6,9 @@
       <li>
         <router-link to="/callservice">Service</router-link>
       </li>
+      <li>
+        <router-link to="/user">User</router-link>
+      </li>
     </ul>
     <hr/>
     <p>
